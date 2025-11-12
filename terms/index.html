@@ -15,7 +15,7 @@
                  radial-gradient(800px 400px at 90% 0%, rgba(56,189,248,.15), transparent 60%), var(--bg);
          color:var(--text); font:16px/1.65 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
     a{color:var(--brand)} a:hover{color:var(--brand-2)}
-    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(12px);
+    header{position:relative;backdrop-filter:saturate(180%) blur(12px);
       background:color-mix(in oklab, var(--bg) 86%, transparent);
       border-bottom:1px solid color-mix(in oklab, var(--text) 10%, transparent)}
     .nav{display:flex;gap:12px;align-items:center;max-width:var(--maxw);margin:0 auto;padding:14px 20px}
@@ -46,7 +46,7 @@
   <main class="wrap">
     <section class="card hero">
       <h1>Terms and Conditions</h1>
-      <div class="badge">Last Updated: October 4, 2025</div>
+      <div class="badge">Last Updated: November 12, 2025</div>
     </section>
 
     <article class="card content">
@@ -58,17 +58,35 @@
       <ul>
         <li>Sales transaction recording and management</li>
         <li>Expense tracking and categorization</li>
-        <li>Profit calculation and analytics</li>
+        <li>Multi-business management (create and switch between multiple business profiles)</li>
+        <li>Profit calculation and analytics with interactive charts</li>
+        <li>Advanced analytics (revenue breakdowns, expense breakdowns, profit trends)</li>
+        <li>P&L Calendar (visual monthly calendar showing daily sales, expenses, and profits)</li>
+        <li>Category customization for sales and expenses</li>
         <li>Data visualization and reporting</li>
-        <li>CSV export functionality</li>
-        <li>Premium subscription features (unlimited transactions, advanced analytics)</li>
+        <li>CSV export functionality (free tier)</li>
+        <li>Excel export with advanced formatting and charts (Premium only)</li>
+        <li>Product image and receipt photo uploads</li>
+        <li>Biometric authentication (Face ID, Touch ID, Fingerprint) - optional</li>
+        <li>Dark mode and light mode themes</li>
+        <li>Currency support with customizable settings</li>
+        <li>Free tier: Limited to 15 sales and 15 expenses</li>
+        <li>Premium subscription: Unlimited transactions and advanced features</li>
       </ul>
 
       <h2 id="3-user-accounts">3. User Accounts</h2>
       <h3 id="31-account-creation">3.1 Account Creation</h3>
       <ul>
         <li>You must create an account to use the App</li>
-        <li>You must provide accurate and complete information</li>
+        <li>You must provide accurate and complete information during registration:
+          <ul>
+            <li>Email address (required)</li>
+            <li>Password (required, minimum 8 characters)</li>
+            <li>First name (required)</li>
+            <li>Last name (required)</li>
+            <li>Phone number (optional, but can be updated later in Settings)</li>
+          </ul>
+        </li>
         <li>You are responsible for maintaining the security of your account credentials</li>
         <li>You must be at least 13 years of age to use the App</li>
       </ul>
@@ -85,69 +103,124 @@
         <li>Limited to 15 sales transactions</li>
         <li>Limited to 15 expense entries</li>
         <li>Basic analytics and reporting</li>
+        <li>CSV export functionality</li>
+        <li>Access to core features (multi-business, category customization, P&L calendar)</li>
       </ul>
       <h3 id="42-premium-subscription">4.2 Premium Subscription</h3>
       <ul>
-        <li>Priced at $9.99 USD per month</li>
+        <li>Priced at $9.99 USD per month (prices may vary by region and currency)</li>
         <li>Unlimited sales and expense entries</li>
         <li>Advanced analytics and features</li>
+        <li>Excel export with advanced formatting and monthly charts</li>
         <li>Billed monthly through Apple App Store or Google Play Store</li>
         <li>Automatically renews unless cancelled 24 hours before the end of the billing period</li>
+        <li>Managed through RevenueCat subscription platform</li>
       </ul>
-      <h3 id="43-refunds">4.3 Refunds</h3>
+      <h3 id="43-subscription-management">4.3 Subscription Management</h3>
+      <ul>
+        <li>View subscription status in Settings</li>
+        <li>Cancel subscription through Apple App Store or Google Play Store (not within the App)</li>
+        <li>Cancellation takes effect at the end of the current billing period</li>
+        <li>No partial refunds for unused time within a billing period</li>
+      </ul>
+      <h3 id="44-refunds">4.4 Refunds</h3>
       <ul>
         <li>Refund requests are handled by Apple App Store or Google Play Store according to their respective policies</li>
         <li>We do not have direct control over refund processing</li>
+        <li>Contact Apple or Google support for refund inquiries</li>
       </ul>
-      <h3 id="44-price-changes">4.4 Price Changes</h3>
+      <h3 id="45-price-changes">4.5 Price Changes</h3>
       <ul>
         <li>We reserve the right to modify subscription prices with 30 days' notice</li>
-        <li>Existing subscribers will be notified via email and in-app notification</li>
+        <li>Existing subscribers will be notified of price changes via email and in-app notification</li>
+        <li>Price changes will not affect your current billing period</li>
       </ul>
 
       <h2 id="5-user-data-and-content">5. User Data and Content</h2>
       <h3 id="51-your-data">5.1 Your Data</h3>
       <ul>
-        <li>You retain all rights to the data you enter into the App</li>
+        <li>You retain all rights to the data you enter into the App (sales, expenses, business information)</li>
         <li>You are responsible for the accuracy of your data</li>
         <li>You grant us a license to process your data solely to provide the App's services</li>
+        <li>We will not use your data for any purpose other than providing the App's functionality</li>
       </ul>
-      <h3 id="52-data-storage">5.2 Data Storage</h3>
+      <h3 id="52-uploaded-content">5.2 Uploaded Content</h3>
       <ul>
-        <li>All data is stored securely using Supabase cloud infrastructure</li>
+        <li>When you upload product images or receipt photos, you represent that:
+          <ul>
+            <li>You own the images or have the right to upload them</li>
+            <li>The images do not violate any copyright, trademark, or other intellectual property rights</li>
+            <li>The images do not contain illegal, offensive, or inappropriate content</li>
+          </ul>
+        </li>
+        <li>We reserve the right to remove any uploaded content that violates these terms</li>
+        <li>Uploaded images are stored securely and are only accessible by you</li>
+        <li>Images are accessed via temporary signed URLs (7-day expiry)</li>
+      </ul>
+      <h3 id="53-data-storage">5.3 Data Storage</h3>
+      <ul>
+        <li>All data is stored securely using Supabase cloud infrastructure (United States)</li>
         <li>Data is encrypted in transit using industry-standard SSL/TLS</li>
+        <li>Database access is protected by Row Level Security (RLS) policies</li>
         <li>We implement reasonable security measures to protect your data</li>
       </ul>
-      <h3 id="53-data-backup">5.3 Data Backup</h3>
+      <h3 id="54-data-backup">5.4 Data Backup</h3>
       <ul>
         <li>You are responsible for maintaining backups of your data</li>
-        <li>We recommend regularly exporting your data using the CSV export feature</li>
-        <li>While we maintain backups, we do not guarantee data recovery in all circumstances</li>
+        <li>We recommend regularly exporting your data using the CSV or Excel export features</li>
+        <li>While we maintain backups for disaster recovery, we do not guarantee data recovery in all circumstances</li>
+        <li>Data backups are retained for up to 90 days after account deletion</li>
       </ul>
 
       <h2 id="6-prohibited-uses">6. Prohibited Uses</h2>
       <p>You agree NOT to:</p>
       <ul>
-        <li>Use the App for any illegal purpose</li>
+        <li>Use the App for any illegal purpose or in violation of any laws</li>
         <li>Attempt to gain unauthorized access to the App or its systems</li>
-        <li>Interfere with or disrupt the App's operation</li>
+        <li>Interfere with or disrupt the App's operation or servers</li>
         <li>Share your account credentials with others</li>
-        <li>Use automated systems to access the App without permission</li>
-        <li>Reverse engineer or decompile the App</li>
-        <li>Remove or modify any proprietary notices</li>
+        <li>Create multiple accounts to circumvent free tier limitations</li>
+        <li>Use automated systems, bots, or scripts to access the App without permission</li>
+        <li>Reverse engineer, decompile, or disassemble the App</li>
+        <li>Remove or modify any proprietary notices or labels</li>
+        <li>Upload images that violate copyright, trademark, or other intellectual property rights</li>
+        <li>Upload images containing illegal, offensive, harmful, or inappropriate content</li>
+        <li>Use the App to store or transmit malicious code or viruses</li>
+        <li>Attempt to scrape or extract data using automated means</li>
+        <li>Impersonate another person or entity</li>
+        <li>Violate any applicable export laws or regulations</li>
       </ul>
 
-      <h2 id="7-third-party-integrations">7. Third-Party Integrations</h2>
-      <h3 id="71-future-integrations">7.1 Future Integrations</h3>
+      <h2 id="7-third-party-integrations">7. Third-Party Integrations and Permissions</h2>
+      <h3 id="71-camera-photo-library">7.1 Camera and Photo Library Access</h3>
       <ul>
-        <li>The App may offer integrations with third-party platforms (e.g., eBay, Shopify, Etsy, Amazon)</li>
-        <li>Use of these integrations is subject to the third party's terms and conditions</li>
-        <li>We are not responsible for third-party service availability or functionality</li>
+        <li>The App requests access to your device's camera and photo library to upload product images and receipt photos</li>
+        <li>This permission is optional - you can use the App without granting camera/photo access</li>
+        <li>You can revoke these permissions at any time in your device settings</li>
+        <li>We only access the specific photos you choose to upload</li>
+        <li>Permissions are requested with clear explanations (NSPhotoLibraryUsageDescription, NSCameraUsageDescription)</li>
       </ul>
-      <h3 id="72-data-import">7.2 Data Import</h3>
+      <h3 id="72-biometric-authentication">7.2 Biometric Authentication (Optional)</h3>
+      <ul>
+        <li>The App offers optional biometric authentication (Face ID, Touch ID, Fingerprint)</li>
+        <li>This feature is entirely optional and can be enabled or disabled at any time in Settings</li>
+        <li>Your biometric data (fingerprint, face scan) NEVER leaves your device and is NOT transmitted to our servers</li>
+        <li>We only store your user ID and email (encrypted) on your device using Expo SecureStore</li>
+        <li>The biometric authentication uses your device's native biometric system</li>
+        <li>Disabling biometric authentication removes stored credentials from your device</li>
+      </ul>
+      <h3 id="73-future-integrations">7.3 Future Third-Party Integrations</h3>
+      <ul>
+        <li>The App may offer integrations with third-party platforms (e.g., eBay, Shopify, Etsy, Amazon) in the future</li>
+        <li>Use of these integrations is subject to the third party's terms and conditions</li>
+        <li>We are not responsible for third-party service availability, functionality, or data practices</li>
+        <li>You can disconnect integrations at any time</li>
+      </ul>
+      <h3 id="74-data-import">7.4 Data Import</h3>
       <ul>
         <li>When using integrations, you authorize us to access and import data from connected platforms</li>
         <li>You are responsible for ensuring you have the right to import and use such data</li>
+        <li>Imported data is subject to the same storage and security practices as manually entered data</li>
       </ul>
 
       <h2 id="8-intellectual-property">8. Intellectual Property</h2>
@@ -166,9 +239,14 @@
       <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
       <ul>
         <li>Warranties of merchantability or fitness for a particular purpose</li>
-        <li>Accuracy, reliability, or completeness of content</li>
+        <li>Accuracy, reliability, or completeness of content (including tax calculations, profit calculations, analytics)</li>
         <li>Uninterrupted or error-free operation</li>
         <li>Security or freedom from viruses or harmful components</li>
+        <li>Accuracy of data synchronization across devices</li>
+        <li>Compatibility with all device models, operating systems, or future OS updates</li>
+        <li>Availability of third-party services (Supabase, RevenueCat, Apple, Google)</li>
+        <li>Quality or functionality of biometric authentication on all devices</li>
+        <li>Accuracy of imported data from third-party integrations</li>
       </ul>
 
       <h2 id="10-limitation-of-liability">10. Limitation of Liability</h2>
@@ -176,32 +254,68 @@
       <ul>
         <li>We are not liable for any indirect, incidental, special, consequential, or punitive damages</li>
         <li>We are not liable for lost profits, data, or business opportunities</li>
-        <li>Our total liability shall not exceed the amount you paid for the subscription in the past 12 months</li>
+        <li>Our total liability shall not exceed the amount you paid for the subscription in the past 12 months (or $100 USD if you're using the free tier)</li>
         <li>We are not responsible for tax calculation accuracy - consult a tax professional</li>
+        <li>We are not liable for data loss if you fail to maintain backups via export features</li>
+        <li>We are not responsible for third-party service failures (Supabase, RevenueCat, Apple, Google)</li>
+        <li>We are not liable for unauthorized access resulting from your failure to secure your account</li>
+        <li>We are not responsible for device-specific issues (biometric hardware, camera/photo access)</li>
+        <li>We are not liable for any damage resulting from use of imported data from third-party integrations</li>
       </ul>
 
       <h2 id="11-tax-disclaimer">11. Tax Disclaimer</h2>
       <ul>
-        <li>The App provides tools to estimate taxes based on your inputs</li>
-        <li>Tax calculations are estimates only and should not be considered tax advice</li>
-        <li>You are solely responsible for the accuracy of your tax filings</li>
-        <li>Consult a qualified tax professional for tax guidance</li>
+        <li>The App provides tools to estimate taxes based on your inputs and selected state/province tax rates</li>
+        <li>Tax calculations are estimates only and should not be considered professional tax advice</li>
+        <li>You are solely responsible for the accuracy of your tax filings and compliance with applicable tax laws</li>
+        <li>The App is not a substitute for professional tax, accounting, or financial advice</li>
+        <li>Consult a qualified tax professional, accountant, or CPA for tax guidance and filing assistance</li>
+        <li>We are not liable for any tax-related penalties, interest, or issues arising from use of the App</li>
+        <li>Tax rates in the App are based on general state sales tax rates and may not reflect:
+          <ul>
+            <li>Local county or city taxes</li>
+            <li>Special tax districts</li>
+            <li>Tax exemptions or special circumstances</li>
+            <li>Changes in tax laws or rates</li>
+          </ul>
+        </li>
+        <li>You should verify all tax calculations with a tax professional before filing</li>
       </ul>
 
       <h2 id="12-account-termination">12. Account Termination</h2>
       <h3 id="121-by-you">12.1 By You</h3>
       <ul>
-        <li>You may delete your account at any time through the App settings</li>
+        <li>You may delete your account at any time through the App settings (Settings &gt; Danger Zone &gt; Delete Account)</li>
         <li>Account deletion is permanent and cannot be undone</li>
-        <li>All your data will be permanently deleted within 30 days</li>
+        <li>You will be required to type "DELETE" to confirm account deletion</li>
+        <li>All your data will be permanently deleted within 30 days, including:
+          <ul>
+            <li>All sales and expense transactions</li>
+            <li>Business profiles</li>
+            <li>Uploaded product images and receipt photos</li>
+            <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
+            <li>Biometric credentials stored on your device (if enabled)</li>
+          </ul>
+        </li>
+        <li>The deletion process uses a secure Supabase Edge Function that ensures complete data removal with cascading deletes across all related tables and storage buckets</li>
+        <li>Backup copies are purged within 90 days</li>
       </ul>
       <h3 id="122-by-us">12.2 By Us</h3>
       <p>We may suspend or terminate your account if:</p>
       <ul>
         <li>You violate these Terms and Conditions</li>
         <li>You engage in fraudulent or illegal activity</li>
-        <li>Your account has been inactive for an extended period</li>
-        <li>Required by law</li>
+        <li>You upload inappropriate or illegal content</li>
+        <li>Your account has been inactive for an extended period (typically more than 2 years)</li>
+        <li>Required by law or legal process</li>
+        <li>You repeatedly violate our policies after warnings</li>
+      </ul>
+      <h3 id="123-effect-of-termination">12.3 Effect of Termination</h3>
+      <ul>
+        <li>Upon termination, your right to use the App immediately ceases</li>
+        <li>We are not liable for any loss of data or content resulting from termination</li>
+        <li>Subscription fees are non-refundable except as required by law</li>
+        <li>You may lose access to any data that has not been exported</li>
       </ul>
 
       <h2 id="13-modifications-to-the-app">13. Modifications to the App</h2>
@@ -227,10 +341,13 @@
       </ul>
 
       <h2 id="16-contact-information">16. Contact Information</h2>
+      <p>For questions about these Terms and Conditions, please contact us at:</p>
       <ul>
-        <li>Email: <a href="mailto:support@profittracker.app">support@profittracker.app</a></li>
-        <li>Website: <a href="https://www.profittracker.app" target="_blank" rel="noopener">www.profittracker.app</a></li>
+        <li>Email: <a href="mailto:profittrackerbusiness@gmail.com">profittrackerbusiness@gmail.com</a></li>
+        <li>Privacy Policy: <a href="https://hourzn.github.io/profit-tracker-policy/#/privacy" target="_blank" rel="noopener">https://hourzn.github.io/profit-tracker-policy/#/privacy</a></li>
+        <li>Terms &amp; Conditions: <a href="https://hourzn.github.io/profit-tracker-policy/terms/" target="_blank" rel="noopener">https://hourzn.github.io/profit-tracker-policy/terms/</a></li>
       </ul>
+      <p>We will respond to inquiries within 30 days.</p>
 
       <h2 id="17-severability">17. Severability</h2>
       <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>

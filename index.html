@@ -11,20 +11,20 @@
   <meta property="og:title" content="ProfitTracker – Privacy Policy" />
   <meta property="og:description" content="How ProfitTracker collects, uses, and protects your data." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://<your-username>.github.io/profittracker-privacy/" />
-  <meta property="og:image" content="https://<your-username>.github.io/profittracker-privacy/og.png" />
+  <meta property="og:url" content="https://hourzn.github.io/profit-tracker-policy/" />
+  <meta property="og:image" content="https://hourzn.github.io/profit-tracker-policy/og.png" />
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "PrivacyPolicy",
     "name": "ProfitTracker – Privacy Policy",
-    "url": "https://<your-username>.github.io/profittracker-privacy/",
+    "url": "https://hourzn.github.io/profit-tracker-policy/",
     "publisher": {
       "@type": "Organization",
       "name": "ProfitTracker"
     },
-    "dateModified": "2025-10-04"
+    "dateModified": "2025-11-12"
   }
   </script>
   <style>
@@ -53,7 +53,7 @@
     a{color:var(--brand)}
     a:hover{color:var(--brand-2)}
     .wrap{max-width:var(--maxw); margin:40px auto; padding:0 20px}
-    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(12px); background:color-mix(in oklab, var(--bg) 86%, transparent); border-bottom:1px solid color-mix(in oklab, var(--text) 10%, transparent)}
+    header{position:relative; z-index:10; backdrop-filter:saturate(180%) blur(12px); background:color-mix(in oklab, var(--bg) 86%, transparent); border-bottom:1px solid color-mix(in oklab, var(--text) 10%, transparent)}
     .nav{display:flex; align-items:center; gap:12px; max-width:var(--maxw); margin:0 auto; padding:14px 20px}
     .logo{display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:var(--text)}
     .lock{width:28px; height:28px; display:grid; place-items:center; border-radius:9px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:white; font-weight:700; box-shadow: var(--shadow)}
@@ -122,7 +122,7 @@
         <nav id="toc-list" aria-label="Table of contents"></nav>
       </aside>
       <article class="card content prose" id="content">
-        <p><strong>Last Updated: October 4, 2025</strong></p>
+        <p><strong>Last Updated: November 12, 2025</strong></p>
 
 <h2 id="introduction">Introduction</h2>
 <p>ProfitTracker ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("the App"). Please read this policy carefully.</p>
@@ -130,36 +130,68 @@
 
 <h2 id="1-information-we-collect">1. Information We Collect</h2>
 <h3 id="11-personal-information-you-provide">1.1 Personal Information You Provide</h3>
+<p>When you create an account, we collect:</p>
 <ul>
   <li><strong>Email address</strong>: Used for account creation, authentication, and communication</li>
   <li><strong>Password</strong>: Encrypted and stored securely; we never store plain-text passwords</li>
-  <li><strong>Display name</strong> (optional): For personalization within the App</li>
+  <li><strong>First name</strong>: Required during registration for account identification</li>
+  <li><strong>Last name</strong>: Required during registration for account identification</li>
+  <li><strong>Phone number</strong>: Optional during registration; can be updated in Settings</li>
 </ul>
 
 <h3 id="12-business-data-you-create">1.2 Business Data You Create</h3>
+<p>When you use the App, you create and store:</p>
 <ul>
-  <li><strong>Sales transactions</strong>: Product names, sale prices, costs, fees, dates, categories, quantities, platforms</li>
-  <li><strong>Expense records</strong>: Expense names, amounts, dates, categories, descriptions</li>
-  <li><strong>Settings preferences</strong>: Tax rates, state/province, appearance preferences (dark/light mode)</li>
+  <li><strong>Sales transactions</strong>: Product names, sale prices, costs, fees, dates, categories, quantities, platforms, notes</li>
+  <li><strong>Expense records</strong>: Expense names, amounts, dates, categories, descriptions, notes</li>
+  <li><strong>Business profiles</strong>: Business names (for multi-business management)</li>
+  <li><strong>Product images</strong>: Photos of items you sell (optional, uploaded from your photo library or camera)</li>
+  <li><strong>Receipt photos</strong>: Photos of expense receipts (optional, uploaded from your photo library or camera)</li>
+  <li><strong>Settings preferences</strong>: Tax rates, state/province, currency, appearance preferences (dark/light mode)</li>
+  <li><strong>Category preferences</strong>: Customized sales and expense category selections</li>
   <li><strong>Premium subscription status</strong>: Whether you have an active subscription</li>
 </ul>
 
 <h3 id="13-automatically-collected-information">1.3 Automatically Collected Information</h3>
+<p>When you use the App, we automatically collect:</p>
 <ul>
   <li><strong>Device information</strong>: Device model, operating system version, unique device identifiers</li>
   <li><strong>Usage data</strong>: Features accessed, time spent in the App, interaction patterns</li>
   <li><strong>Error logs</strong>: Crash reports and technical diagnostics to improve App performance</li>
   <li><strong>Analytics data</strong>: Aggregated and anonymized usage statistics</li>
+  <li><strong>Cache data</strong>: Temporary local storage of sales/expenses data for offline functionality and performance (stored on your device only)</li>
 </ul>
 
 <h3 id="14-information-from-third-party-services">1.4 Information from Third-Party Services</h3>
+<p>We use third-party services that may collect information:</p>
 <ul>
   <li><strong>Supabase</strong>: Database and authentication provider (stores your account and business data)</li>
   <li><strong>RevenueCat</strong>: Subscription management service (processes subscription status)</li>
   <li><strong>Apple App Store / Google Play Store</strong>: Payment processing (we do not see your payment details)</li>
 </ul>
 
-<h3 id="15-future-integration-data">1.5 Future Integration Data</h3>
+<h3 id="15-biometric-authentication-data">1.5 Biometric Authentication Data (Optional)</h3>
+<p>If you enable Face ID, Touch ID, or Fingerprint authentication:</p>
+<ul>
+  <li><strong>Biometric credentials</strong>: Your Face ID/Touch ID/Fingerprint data is NEVER collected, transmitted, or stored on our servers</li>
+  <li><strong>Local device storage only</strong>: When you enable biometric login, only your user ID and email are stored securely on your device using Expo SecureStore (encrypted device-level storage)</li>
+  <li><strong>Authentication process</strong>: The biometric authentication uses your device's native biometric system (iOS LocalAuthentication API or Android BiometricPrompt). Your actual biometric data never leaves your device</li>
+  <li><strong>Your control</strong>: You can enable or disable biometric login at any time in Settings. Disabling it removes the stored credentials from your device</li>
+  <li><strong>What we store</strong>: We only know whether you have biometric login enabled (a true/false preference), not your actual biometric data</li>
+</ul>
+
+<h3 id="16-photo-library-and-camera-access">1.6 Photo Library and Camera Access (Optional)</h3>
+<p>When you choose to attach images to transactions:</p>
+<ul>
+  <li><strong>Camera access</strong>: Only used when you tap "Take Photo" to capture product images or receipt photos</li>
+  <li><strong>Photo library access</strong>: Only used when you tap "Choose Photo" to select existing images from your device</li>
+  <li><strong>What we access</strong>: Only the specific photo(s) you select for upload</li>
+  <li><strong>Permissions</strong>: You can grant or revoke camera/photo permissions in your device settings at any time</li>
+  <li><strong>Storage</strong>: Selected photos are uploaded to secure Supabase storage buckets (see Section 4.1 for security details)</li>
+</ul>
+
+<h3 id="17-future-integration-data">1.7 Future Integration Data</h3>
+<p>When third-party integrations become available (e.g., eBay, Shopify, Etsy, Amazon):</p>
 <ul>
   <li>We will only access data you explicitly authorize</li>
   <li>Imported data may include: orders, transactions, product information, fees</li>
@@ -167,13 +199,18 @@
 </ul>
 
 <h2 id="2-how-we-use-your-information">2. How We Use Your Information</h2>
+<p>We use your information to:</p>
+
 <h3 id="21-provide-and-maintain-the-app">2.1 Provide and Maintain the App</h3>
 <ul>
   <li>Create and manage your account</li>
   <li>Store and sync your business data across devices</li>
   <li>Process and calculate profit metrics</li>
   <li>Generate reports and analytics</li>
-  <li>Enable CSV data export</li>
+  <li>Enable CSV/Excel data export (Excel export is a Premium feature)</li>
+  <li>Store product images and receipt photos securely in the cloud</li>
+  <li>Generate temporary signed URLs (valid for 7 days) to display your uploaded images within the App</li>
+  <li>Cache data locally on your device for offline access and faster performance</li>
 </ul>
 
 <h3 id="22-improve-the-app">2.2 Improve the App</h3>
@@ -212,14 +249,30 @@
 <p>We DO NOT sell, rent, or trade your personal information. We only share your information in the following limited circumstances:</p>
 
 <h3 id="31-service-providers">3.1 Service Providers</h3>
+<p>We share information with trusted third-party service providers who help us operate the App:</p>
 <ul>
-  <li><strong>Supabase (Database &amp; Auth)</strong>: Stores your account credentials and business data – Location: United States – Purpose: Data storage and user authentication</li>
-  <li><strong>RevenueCat (Subscriptions)</strong>: Manages premium subscription status – Purpose: Subscription verification and management</li>
-  <li><strong>Apple App Store / Google Play Store</strong>: Processes payments – Purpose: Payment processing (we do not receive your payment information)</li>
+  <li><strong>Supabase (Database, Auth &amp; File Storage)</strong>: Stores your account credentials, business data, and uploaded images<br>
+    – Location: United States<br>
+    – Purpose: Data storage, user authentication, and secure file storage<br>
+    – Privacy Policy: https://supabase.com/privacy<br>
+    – Security: All data encrypted in transit (SSL/TLS) and at rest. Row Level Security (RLS) policies ensure you can only access your own data<br>
+    – File Storage: Product images and receipt photos are stored in private storage buckets. Access is controlled via temporary signed URLs (7-day expiry) that only you can generate</li>
+</ul>
+<ul>
+  <li><strong>RevenueCat (Subscriptions)</strong>: Manages premium subscription status<br>
+    – Purpose: Subscription verification and management<br>
+    – Privacy Policy: https://www.revenuecat.com/privacy<br>
+    – What they receive: Your user ID and subscription status (not your transaction data)</li>
+</ul>
+<ul>
+  <li><strong>Apple App Store / Google Play Store</strong>: Processes payments<br>
+    – Purpose: Payment processing (we do not receive your payment information)<br>
+    – They handle billing, subscription management, and payment details</li>
 </ul>
 <p>All service providers are contractually obligated to protect your information and use it only for the purposes we specify.</p>
 
 <h3 id="32-legal-requirements">3.2 Legal Requirements</h3>
+<p>We may disclose information if required by law:</p>
 <ul>
   <li>To comply with legal processes (subpoenas, court orders)</li>
   <li>To enforce our Terms and Conditions</li>
@@ -228,6 +281,7 @@
 </ul>
 
 <h3 id="33-business-transfers">3.3 Business Transfers</h3>
+<p>If ProfitTracker is involved in a merger, acquisition, or sale of assets:</p>
 <ul>
   <li>Your information may be transferred to the new owner</li>
   <li>You will be notified via email and in-app notification</li>
@@ -240,16 +294,30 @@
 <h2 id="4-data-storage-and-security">4. Data Storage and Security</h2>
 <h3 id="41-where-we-store-your-data">4.1 Where We Store Your Data</h3>
 <ul>
-  <li>All data is stored on secure Supabase cloud servers located in the United States</li>
-  <li>Data is replicated for backup and disaster recovery purposes</li>
-  <li>We use geographically distributed servers for reliability</li>
+  <li><strong>Cloud storage</strong>: All account data, transactions, and uploaded images are stored on secure Supabase cloud servers located in the United States</li>
+  <li><strong>Device storage</strong>: Some data is cached locally on your device using AsyncStorage for offline access and performance (this never leaves your device)</li>
+  <li><strong>Biometric credentials</strong>: If you enable biometric login, your user ID and email are stored encrypted on your device using Expo SecureStore (not on our servers)</li>
+  <li><strong>File storage</strong>: Product images and receipt photos are uploaded to Supabase Storage in private buckets:
+    <ul>
+      <li><code>product-images</code>: Stores photos of items you sell</li>
+      <li><code>receipts</code>: Stores photos of expense receipts</li>
+      <li>Access is controlled via signed URLs that expire after 7 days (automatically refreshed when you view transactions)</li>
+    </ul>
+  </li>
+  <li><strong>Backups</strong>: Data is replicated for backup and disaster recovery purposes</li>
+  <li><strong>No international transfers</strong>: All data remains within the United States</li>
 </ul>
 
 <h3 id="42-how-we-protect-your-data">4.2 How We Protect Your Data</h3>
+<p>We implement industry-standard security measures:</p>
 <ul>
   <li><strong>Encryption in transit</strong>: All data transmitted between your device and our servers uses SSL/TLS encryption</li>
-  <li><strong>Encryption at rest</strong>: Database data is encrypted when stored</li>
-  <li><strong>Password security</strong>: Passwords are hashed using bcrypt with industry-standard salt rounds</li>
+  <li><strong>Encryption at rest</strong>: Database data is encrypted when stored on Supabase servers</li>
+  <li><strong>Password security</strong>: Passwords are hashed using bcrypt with industry-standard salt rounds (we never store plain-text passwords)</li>
+  <li><strong>Row Level Security (RLS)</strong>: Database policies ensure users can only access their own data</li>
+  <li><strong>Signed URLs</strong>: Uploaded images are accessed via temporary signed URLs (7-day expiry) that only authenticated users can generate</li>
+  <li><strong>Private storage buckets</strong>: All uploaded images are stored in private buckets with strict access controls</li>
+  <li><strong>Biometric security</strong>: If enabled, biometric credentials are encrypted using your device's secure enclave (iOS Keychain/Android Keystore)</li>
   <li><strong>Access controls</strong>: Strict access limitations to your data</li>
   <li><strong>Regular security audits</strong>: Ongoing monitoring for vulnerabilities</li>
   <li><strong>Secure authentication</strong>: Token-based authentication with automatic expiration</li>
@@ -258,9 +326,18 @@
 <h3 id="43-data-retention">4.3 Data Retention</h3>
 <ul>
   <li><strong>Active accounts</strong>: Data is retained as long as your account is active</li>
-  <li><strong>Deleted accounts</strong>: Data is permanently deleted within 30 days of account deletion</li>
-  <li><strong>Backups</strong>: Backup copies are purged within 90 days</li>
-  <li><strong>Subscription records</strong>: Retained for 7 years for tax and legal compliance</li>
+  <li><strong>Deleted accounts</strong>: When you delete your account, all data is permanently deleted within 30 days, including:
+    <ul>
+      <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
+      <li>All sales and expense transactions</li>
+      <li>Business profiles</li>
+      <li>Uploaded product images and receipt photos from storage buckets</li>
+      <li>Biometric credentials stored on your device (if enabled)</li>
+      <li>Cached data on your device</li>
+    </ul>
+  </li>
+  <li><strong>Backups</strong>: Backup copies are purged within 90 days of account deletion</li>
+  <li><strong>Subscription records</strong>: Retained for 7 years for tax and legal compliance (does not include your transaction data, only subscription status)</li>
 </ul>
 
 <h3 id="44-your-responsibility">4.4 Your Responsibility</h3>
@@ -273,34 +350,54 @@
 
 <h2 id="5-your-privacy-rights">5. Your Privacy Rights</h2>
 <h3 id="51-access-your-data">5.1 Access Your Data</h3>
+<p>You can access all your data within the App at any time by:</p>
 <ul>
   <li>Viewing your sales and expenses in the App</li>
-  <li>Exporting your data via CSV in the Settings</li>
+  <li>Viewing your uploaded product images and receipt photos</li>
+  <li>Exporting your data via CSV in the Settings (free tier)</li>
+  <li>Exporting your data via Excel/XLSX in the Settings (Premium feature with advanced formatting and charts)</li>
 </ul>
 
 <h3 id="52-correct-your-data">5.2 Correct Your Data</h3>
+<p>You can edit or update your information:</p>
 <ul>
   <li>Edit transactions directly in the App</li>
-  <li>Update your email and preferences in Settings</li>
-  <li>Contact support for account-level changes</li>
+  <li>Update your first name, last name, and phone number in Settings &gt; Edit Profile</li>
+  <li>Update your email and currency preferences in Settings</li>
+  <li>Contact support for account-level changes that cannot be made in-app</li>
 </ul>
 
 <h3 id="53-delete-your-data">5.3 Delete Your Data</h3>
+<p>You can delete your data:</p>
 <ul>
   <li>Delete individual transactions within the App</li>
-  <li>Delete your entire account in Settings &gt; Danger Zone</li>
+  <li>Delete uploaded product images or receipt photos from individual transactions</li>
+  <li>Delete your entire account in Settings &gt; Danger Zone &gt; Delete Account</li>
   <li>Account deletion is permanent and irreversible</li>
-  <li>All data is removed within 30 days</li>
+  <li>All your data will be permanently deleted within 30 days, including:
+    <ul>
+      <li>All sales and expense transactions</li>
+      <li>Business profiles</li>
+      <li>Uploaded product images and receipt photos</li>
+      <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
+      <li>Biometric credentials stored on your device (if enabled)</li>
+    </ul>
+  </li>
+  <li><strong>Important</strong>: This action uses a secure Supabase Edge Function that ensures complete data deletion with cascading deletes across all related tables and storage buckets</li>
 </ul>
 
 <h3 id="54-export-your-data">5.4 Export Your Data (Data Portability)</h3>
+<p>You can export your data:</p>
 <ul>
-  <li>Use the CSV export feature in Settings &gt; Data</li>
-  <li>Exports include all sales and expenses in a standard format</li>
-  <li>You can transfer this data to other applications</li>
+  <li><strong>CSV Export (Free &amp; Premium)</strong>: Use the CSV export feature in Settings &gt; Data Export. Exports include all sales and expenses in a standard format</li>
+  <li><strong>Excel Export (Premium Only)</strong>: Use the Excel export feature in Settings &gt; Data Export. Includes advanced formatting, charts, and monthly summaries</li>
+  <li>You can transfer this data to other applications (e.g., QuickBooks, Excel, Google Sheets)</li>
+  <li>Export options include date range filtering (This Month, Last Month, Last 3 Months, Last 6 Months, This Year, Last Year, All Time, Custom Date Range)</li>
+  <li>Exports can include: All Data, Sales Only, or Expenses Only</li>
 </ul>
 
 <h3 id="55-opt-out-of-communications">5.5 Opt-Out of Communications</h3>
+<p>You can control communications:</p>
 <ul>
   <li>Unsubscribe from promotional emails via the unsubscribe link</li>
   <li>You will still receive important account and service updates</li>
@@ -330,6 +427,7 @@
 <p>ProfitTracker is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately, and we will delete such information.</p>
 
 <h2 id="7-international-data-transfers">7. International Data Transfers</h2>
+<p>If you are accessing the App from outside the United States:</p>
 <ul>
   <li>Your data will be transferred to and stored in the United States</li>
   <li>By using the App, you consent to this transfer</li>
@@ -342,18 +440,21 @@
 <h2 id="9-cookies-and-tracking-technologies">9. Cookies and Tracking Technologies</h2>
 <p>The App uses minimal tracking:</p>
 <ul>
-  <li><strong>Authentication tokens</strong>: To keep you logged in securely</li>
-  <li><strong>Local storage</strong>: To cache data for offline functionality and performance</li>
-  <li><strong>Analytics</strong>: We may use anonymized analytics to improve the App</li>
+  <li><strong>Authentication tokens</strong>: To keep you logged in securely (stored on your device)</li>
+  <li><strong>Local storage (AsyncStorage)</strong>: To cache sales/expenses data for offline functionality and performance (stored on your device only, never transmitted)</li>
+  <li><strong>Biometric credentials (SecureStore)</strong>: To store user ID and email for biometric login (encrypted on your device, never transmitted to servers)</li>
+  <li><strong>Analytics</strong>: We may use anonymized analytics to improve the App (no personally identifiable information)</li>
 </ul>
 <p>We do NOT use:</p>
 <ul>
   <li>Advertising cookies</li>
   <li>Cross-site tracking</li>
   <li>Third-party advertising networks</li>
+  <li>Tracking across other websites or apps</li>
 </ul>
 
 <h2 id="10-changes-to-this-privacy-policy">10. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be indicated by:</p>
 <ul>
   <li>An updated "Last Updated" date at the top</li>
   <li>In-app notification for material changes</li>
@@ -365,6 +466,7 @@
 <p>We do not track users across third-party websites and therefore do not respond to Do Not Track (DNT) signals.</p>
 
 <h2 id="12-data-breach-notification">12. Data Breach Notification</h2>
+<p>In the unlikely event of a data breach:</p>
 <ul>
   <li>We will notify affected users within 72 hours of discovery</li>
   <li>Notifications will be sent via email and in-app alert</li>
@@ -373,6 +475,7 @@
 </ul>
 
 <h2 id="13-your-consent">13. Your Consent</h2>
+<p>By using ProfitTracker, you consent to:</p>
 <ul>
   <li>The collection, use, and storage of your information as described</li>
   <li>The transfer of your data to the United States</li>
@@ -380,19 +483,40 @@
 </ul>
 
 <h2 id="14-contact-us">14. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
 <ul>
-  <li><strong>Email</strong>: <a href="mailto:privacy@profittracker.app">privacy@profittracker.app</a></li>
-  <li><strong>Support Email</strong>: <a href="mailto:support@profittracker.app">support@profittracker.app</a></li>
-  <li><strong>Website</strong>: <a href="https://www.profittracker.app" target="_blank" rel="noopener">www.profittracker.app</a></li>
+  <li><strong>Email</strong>: <a href="mailto:profittrackerbusiness@gmail.com">profittrackerbusiness@gmail.com</a></li>
+  <li><strong>Privacy Policy</strong>: <a href="https://hourzn.github.io/profit-tracker-policy/#/privacy" target="_blank" rel="noopener">https://hourzn.github.io/profit-tracker-policy/#/privacy</a></li>
+  <li><strong>Terms &amp; Conditions</strong>: <a href="https://hourzn.github.io/profit-tracker-policy/terms/" target="_blank" rel="noopener">https://hourzn.github.io/profit-tracker-policy/terms/</a></li>
 </ul>
 <p>We will respond to all requests within 30 days.</p>
 
 <h2 id="15-transparency-commitment">15. Transparency Commitment</h2>
 <p>We believe in complete transparency regarding your data:</p>
-<p><strong>What we collect</strong>: Email, password (encrypted), business transaction data you create<br>
-<strong>Why we collect it</strong>: To provide the App's functionality and improve your experience<br>
-<strong>Who has access</strong>: Only you and our secure service providers (Supabase, RevenueCat)<br>
-<strong>How long we keep it</strong>: Until you delete your account, then 30 days for full deletion</p>
+<p><strong>What we collect</strong>:<br>
+– Account data: Email, password (encrypted), first name, last name, phone number (optional)<br>
+– Transaction data: Sales and expenses you create<br>
+– Files: Product images and receipt photos you choose to upload<br>
+– Device-only: Biometric credentials (if enabled), cached data for offline access<br>
+– Usage: App interaction patterns (anonymized)</p>
+
+<p><strong>Why we collect it</strong>:<br>
+– To provide the App's functionality (tracking profits, generating reports)<br>
+– To improve your experience (offline access, faster performance)<br>
+– To secure your account (authentication, biometric login)</p>
+
+<p><strong>Who has access</strong>:<br>
+– You: Full access to all your data<br>
+– Supabase: Infrastructure provider (database, auth, file storage) - subject to strict security policies<br>
+– RevenueCat: Subscription status only (not your transaction data)<br>
+– Apple/Google: Payment processing only (we don't see your payment details)</p>
+
+<p><strong>How long we keep it</strong>:<br>
+– Active accounts: Indefinitely, until you delete<br>
+– Deleted accounts: 30 days for complete removal from all systems<br>
+– Backups: 90 days after account deletion<br>
+– Subscription records: 7 years (legal compliance, no transaction data)</p>
+
 <p><strong>What we DON'T do</strong>:</p>
 <ul>
   <li>❌ We don't sell your data</li>
@@ -400,14 +524,45 @@
   <li>❌ We don't use your data for purposes other than providing the App</li>
   <li>❌ We don't track you across other websites</li>
   <li>❌ We don't read your data unless required for support or legal reasons</li>
+  <li>❌ We don't collect biometric data (stored on your device only)</li>
+  <li>❌ We don't access your entire photo library (only photos you select)</li>
 </ul>
-<p><strong>Your control</strong>: You can view, export, edit, or delete your data at any time.</p>
+
+<p><strong>Your control</strong>:<br>
+– View all your data in the App<br>
+– Export data anytime (CSV for free, Excel for Premium)<br>
+– Edit or delete individual transactions<br>
+– Delete uploaded images from transactions<br>
+– Disable biometric login anytime<br>
+– Delete your entire account permanently<br>
+– Revoke camera/photo permissions in device settings</p>
+
+<p><strong>File Storage Details</strong>:<br>
+– Product images and receipts stored in private Supabase storage buckets<br>
+– Accessed via temporary signed URLs (7-day expiry, auto-refreshed)<br>
+– Row Level Security ensures only you can access your files<br>
+– Deleted automatically when you delete transactions or your account</p>
+
+<p><strong>Biometric Authentication Details</strong>:<br>
+– Your Face ID/Touch ID/Fingerprint data NEVER leaves your device<br>
+– We only store your user ID and email (encrypted) on your device<br>
+– Uses your device's native biometric system (iOS LocalAuthentication API, Android BiometricPrompt)<br>
+– We only know if you have biometric enabled (true/false), not your actual biometric data</p>
+
+<p><strong>Data Security</strong>:<br>
+– SSL/TLS encryption for all network traffic<br>
+– Row Level Security policies on database<br>
+– Encrypted password storage (bcrypt hashing)<br>
+– Private storage buckets with signed URL access<br>
+– Biometric credentials use device secure enclave (iOS Keychain, Android Keystore)</p>
+
 <hr>
-<p><em>Last Updated: October 4, 2025</em></p>
+<p><strong>Thank you for trusting ProfitTracker with your business data. We take this responsibility seriously and are committed to protecting your privacy.</strong></p>
+<p><em>Last Updated: November 12, 2025</em></p>
       </article>
     </section>
 
-    <p class="footer">Have questions? Email <a href="mailto:privacy@profittracker.app">privacy@profittracker.app</a> or <a href="mailto:support@profittracker.app">support@profittracker.app</a>.</p>
+    <p class="footer">Have questions? Email <a href="mailto:profittrackerbusiness@gmail.com">profittrackerbusiness@gmail.com</a>.</p>
   </main>
 
   <button class="backtotop" id="backtotop" aria-label="Back to top">↑ Back to top</button>
