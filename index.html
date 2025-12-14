@@ -24,7 +24,7 @@
       "@type": "Organization",
       "name": "ProfitTracker"
     },
-    "dateModified": "2025-11-12"
+    "dateModified": "2025-12-14"
   }
   </script>
   <style>
@@ -122,7 +122,7 @@
         <nav id="toc-list" aria-label="Table of contents"></nav>
       </aside>
       <article class="card content prose" id="content">
-        <p><strong>Last Updated: November 12, 2025</strong></p>
+        <p><strong>Last Updated: December 14, 2025</strong></p>
 
 <h2 id="introduction">Introduction</h2>
 <p>ProfitTracker ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("the App"). Please read this policy carefully.</p>
@@ -144,8 +144,10 @@
 <ul>
   <li><strong>Sales transactions</strong>: Product names, sale prices, costs, fees, dates, categories, quantities, platforms, notes</li>
   <li><strong>Expense records</strong>: Expense names, amounts, dates, categories, descriptions, notes</li>
+  <li><strong>Inventory items</strong>: Item names, purchase prices, purchase dates, quantities, categories, notes, and status (in stock or sold)</li>
   <li><strong>Business profiles</strong>: Business names (for multi-business management)</li>
   <li><strong>Product images</strong>: Photos of items you sell (optional, uploaded from your photo library or camera)</li>
+  <li><strong>Inventory images</strong>: Photos of inventory items you track (optional, uploaded from your photo library or camera)</li>
   <li><strong>Receipt photos</strong>: Photos of expense receipts (optional, uploaded from your photo library or camera)</li>
   <li><strong>Settings preferences</strong>: Tax rates, state/province, currency, appearance preferences (dark/light mode)</li>
   <li><strong>Category preferences</strong>: Customized sales and expense category selections</li>
@@ -159,7 +161,7 @@
   <li><strong>Usage data</strong>: Features accessed, time spent in the App, interaction patterns</li>
   <li><strong>Error logs</strong>: Crash reports and technical diagnostics to improve App performance</li>
   <li><strong>Analytics data</strong>: Aggregated and anonymized usage statistics</li>
-  <li><strong>Cache data</strong>: Temporary local storage of sales/expenses data for offline functionality and performance (stored on your device only)</li>
+  <li><strong>Cache data</strong>: Temporary local storage of sales/expenses/inventory data for offline functionality and performance (stored on your device only)</li>
 </ul>
 
 <h3 id="14-information-from-third-party-services">1.4 Information from Third-Party Services</h3>
@@ -181,9 +183,9 @@
 </ul>
 
 <h3 id="16-photo-library-and-camera-access">1.6 Photo Library and Camera Access (Optional)</h3>
-<p>When you choose to attach images to transactions:</p>
+<p>When you choose to attach images to transactions or inventory items:</p>
 <ul>
-  <li><strong>Camera access</strong>: Only used when you tap "Take Photo" to capture product images or receipt photos</li>
+  <li><strong>Camera access</strong>: Only used when you tap "Take Photo" to capture product images, inventory images, or receipt photos</li>
   <li><strong>Photo library access</strong>: Only used when you tap "Choose Photo" to select existing images from your device</li>
   <li><strong>What we access</strong>: Only the specific photo(s) you select for upload</li>
   <li><strong>Permissions</strong>: You can grant or revoke camera/photo permissions in your device settings at any time</li>
@@ -206,9 +208,11 @@
   <li>Create and manage your account</li>
   <li>Store and sync your business data across devices</li>
   <li>Process and calculate profit metrics</li>
+  <li>Track inventory items and quantities</li>
+  <li>Automatically create sales records when inventory items are marked as sold</li>
   <li>Generate reports and analytics</li>
   <li>Enable CSV/Excel data export (Excel export is a Premium feature)</li>
-  <li>Store product images and receipt photos securely in the cloud</li>
+  <li>Store product images, inventory images, and receipt photos securely in the cloud</li>
   <li>Generate temporary signed URLs (valid for 7 days) to display your uploaded images within the App</li>
   <li>Cache data locally on your device for offline access and faster performance</li>
 </ul>
@@ -251,12 +255,12 @@
 <h3 id="31-service-providers">3.1 Service Providers</h3>
 <p>We share information with trusted third-party service providers who help us operate the App:</p>
 <ul>
-  <li><strong>Supabase (Database, Auth &amp; File Storage)</strong>: Stores your account credentials, business data, and uploaded images<br>
+  <li><strong>Supabase (Database, Auth &amp; File Storage)</strong>: Stores your account credentials, business data, inventory data, and uploaded images<br>
     – Location: United States<br>
     – Purpose: Data storage, user authentication, and secure file storage<br>
     – Privacy Policy: https://supabase.com/privacy<br>
     – Security: All data encrypted in transit (SSL/TLS) and at rest. Row Level Security (RLS) policies ensure you can only access your own data<br>
-    – File Storage: Product images and receipt photos are stored in private storage buckets. Access is controlled via temporary signed URLs (7-day expiry) that only you can generate</li>
+    – File Storage: Product images, inventory images, and receipt photos are stored in private storage buckets. Access is controlled via temporary signed URLs (7-day expiry) that only you can generate</li>
 </ul>
 <ul>
   <li><strong>RevenueCat (Subscriptions)</strong>: Manages premium subscription status<br>
@@ -294,12 +298,13 @@
 <h2 id="4-data-storage-and-security">4. Data Storage and Security</h2>
 <h3 id="41-where-we-store-your-data">4.1 Where We Store Your Data</h3>
 <ul>
-  <li><strong>Cloud storage</strong>: All account data, transactions, and uploaded images are stored on secure Supabase cloud servers located in the United States</li>
+  <li><strong>Cloud storage</strong>: All account data, transactions, inventory items, and uploaded images are stored on secure Supabase cloud servers located in the United States</li>
   <li><strong>Device storage</strong>: Some data is cached locally on your device using AsyncStorage for offline access and performance (this never leaves your device)</li>
   <li><strong>Biometric credentials</strong>: If you enable biometric login, your user ID and email are stored encrypted on your device using Expo SecureStore (not on our servers)</li>
-  <li><strong>File storage</strong>: Product images and receipt photos are uploaded to Supabase Storage in private buckets:
+  <li><strong>File storage</strong>: Product images, inventory images, and receipt photos are uploaded to Supabase Storage in private buckets:
     <ul>
       <li><code>product-images</code>: Stores photos of items you sell</li>
+      <li><code>inventory-images</code>: Stores photos of inventory items you track</li>
       <li><code>receipts</code>: Stores photos of expense receipts</li>
       <li>Access is controlled via signed URLs that expire after 7 days (automatically refreshed when you view transactions)</li>
     </ul>
@@ -330,8 +335,9 @@
     <ul>
       <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
       <li>All sales and expense transactions</li>
+      <li>All inventory items</li>
       <li>Business profiles</li>
-      <li>Uploaded product images and receipt photos from storage buckets</li>
+      <li>Uploaded product images, inventory images, and receipt photos from storage buckets</li>
       <li>Biometric credentials stored on your device (if enabled)</li>
       <li>Cached data on your device</li>
     </ul>
@@ -352,8 +358,8 @@
 <h3 id="51-access-your-data">5.1 Access Your Data</h3>
 <p>You can access all your data within the App at any time by:</p>
 <ul>
-  <li>Viewing your sales and expenses in the App</li>
-  <li>Viewing your uploaded product images and receipt photos</li>
+  <li>Viewing your sales, expenses, and inventory in the App</li>
+  <li>Viewing your uploaded product images, inventory images, and receipt photos</li>
   <li>Exporting your data via CSV in the Settings (free tier)</li>
   <li>Exporting your data via Excel/XLSX in the Settings (Premium feature with advanced formatting and charts)</li>
 </ul>
@@ -361,7 +367,7 @@
 <h3 id="52-correct-your-data">5.2 Correct Your Data</h3>
 <p>You can edit or update your information:</p>
 <ul>
-  <li>Edit transactions directly in the App</li>
+  <li>Edit transactions and inventory items directly in the App</li>
   <li>Update your first name, last name, and phone number in Settings &gt; Edit Profile</li>
   <li>Update your email and currency preferences in Settings</li>
   <li>Contact support for account-level changes that cannot be made in-app</li>
@@ -370,15 +376,16 @@
 <h3 id="53-delete-your-data">5.3 Delete Your Data</h3>
 <p>You can delete your data:</p>
 <ul>
-  <li>Delete individual transactions within the App</li>
-  <li>Delete uploaded product images or receipt photos from individual transactions</li>
+  <li>Delete individual transactions or inventory items within the App</li>
+  <li>Delete uploaded product images, inventory images, or receipt photos from individual records</li>
   <li>Delete your entire account in Settings &gt; Danger Zone &gt; Delete Account</li>
   <li>Account deletion is permanent and irreversible</li>
   <li>All your data will be permanently deleted within 30 days, including:
     <ul>
       <li>All sales and expense transactions</li>
+      <li>All inventory items</li>
       <li>Business profiles</li>
-      <li>Uploaded product images and receipt photos</li>
+      <li>Uploaded product images, inventory images, and receipt photos</li>
       <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
       <li>Biometric credentials stored on your device (if enabled)</li>
     </ul>
@@ -441,7 +448,7 @@
 <p>The App uses minimal tracking:</p>
 <ul>
   <li><strong>Authentication tokens</strong>: To keep you logged in securely (stored on your device)</li>
-  <li><strong>Local storage (AsyncStorage)</strong>: To cache sales/expenses data for offline functionality and performance (stored on your device only, never transmitted)</li>
+  <li><strong>Local storage (AsyncStorage)</strong>: To cache sales/expenses/inventory data for offline functionality and performance (stored on your device only, never transmitted)</li>
   <li><strong>Biometric credentials (SecureStore)</strong>: To store user ID and email for biometric login (encrypted on your device, never transmitted to servers)</li>
   <li><strong>Analytics</strong>: We may use anonymized analytics to improve the App (no personally identifiable information)</li>
 </ul>
@@ -496,12 +503,13 @@
 <p><strong>What we collect</strong>:<br>
 – Account data: Email, password (encrypted), first name, last name, phone number (optional)<br>
 – Transaction data: Sales and expenses you create<br>
-– Files: Product images and receipt photos you choose to upload<br>
+– Inventory data: Items you add to track stock, quantities, purchase prices, and sold status<br>
+– Files: Product images, inventory images, and receipt photos you choose to upload<br>
 – Device-only: Biometric credentials (if enabled), cached data for offline access<br>
 – Usage: App interaction patterns (anonymized)</p>
 
 <p><strong>Why we collect it</strong>:<br>
-– To provide the App's functionality (tracking profits, generating reports)<br>
+– To provide the App's functionality (tracking profits, managing inventory, generating reports)<br>
 – To improve your experience (offline access, faster performance)<br>
 – To secure your account (authentication, biometric login)</p>
 
@@ -529,19 +537,27 @@
 </ul>
 
 <p><strong>Your control</strong>:<br>
-– View all your data in the App<br>
+– View all your data in the App (sales, expenses, inventory)<br>
 – Export data anytime (CSV for free, Excel for Premium)<br>
-– Edit or delete individual transactions<br>
-– Delete uploaded images from transactions<br>
+– Edit or delete individual transactions and inventory items<br>
+– Delete uploaded images from transactions and inventory<br>
 – Disable biometric login anytime<br>
 – Delete your entire account permanently<br>
 – Revoke camera/photo permissions in device settings</p>
 
 <p><strong>File Storage Details</strong>:<br>
-– Product images and receipts stored in private Supabase storage buckets<br>
+– Product images, inventory images, and receipts stored in private Supabase storage buckets<br>
 – Accessed via temporary signed URLs (7-day expiry, auto-refreshed)<br>
 – Row Level Security ensures only you can access your files<br>
-– Deleted automatically when you delete transactions or your account</p>
+– Deleted automatically when you delete transactions, inventory items, or your account</p>
+
+<p><strong>Inventory Feature Details</strong>:<br>
+– Track items you purchase before selling them<br>
+– Store purchase price, quantity, date, category, and photos<br>
+– Mark items as sold with partial quantity support (e.g., sell 5 of 10 items)<br>
+– When marked as sold, a sale is automatically created in your sales records<br>
+– Free users limited to 15 inventory items; Premium users have unlimited<br>
+– All inventory data is subject to the same security and privacy protections as other data</p>
 
 <p><strong>Biometric Authentication Details</strong>:<br>
 – Your Face ID/Touch ID/Fingerprint data NEVER leaves your device<br>
@@ -558,7 +574,7 @@
 
 <hr>
 <p><strong>Thank you for trusting ProfitTracker with your business data. We take this responsibility seriously and are committed to protecting your privacy.</strong></p>
-<p><em>Last Updated: November 12, 2025</em></p>
+<p><em>Last Updated: December 14, 2025</em></p>
       </article>
     </section>
 
