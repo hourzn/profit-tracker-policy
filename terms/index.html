@@ -46,7 +46,7 @@
   <main class="wrap">
     <section class="card hero">
       <h1>Terms and Conditions</h1>
-      <div class="badge">Last Updated: December 14, 2025</div>
+      <div class="badge">Last Updated: December 24, 2025</div>
     </section>
 
     <article class="card content">
@@ -54,26 +54,27 @@
       <p>By downloading, installing, or using ProfitTracker ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the App.</p>
 
       <h2 id="2-description-of-service">2. Description of Service</h2>
-      <p>ProfitTracker is a business management application that helps users track sales, expenses, inventory, and profit margins. The App provides:</p>
+      <p>ProfitTracker is a comprehensive business management application that helps users track sales, expenses, inventory, and profit margins. The App provides:</p>
       <ul>
-        <li>Sales transaction recording and management</li>
-        <li>Expense tracking and categorization</li>
-        <li>Inventory management (track items before selling, with quantities and purchase prices)</li>
-        <li>Mark as sold functionality (convert inventory items to sales with partial quantity support)</li>
-        <li>Multi-business management (create and switch between multiple business profiles)</li>
+        <li>Sales transaction recording and management with product photos</li>
+        <li>Expense tracking and categorization with receipt photos</li>
+        <li>Inventory management (track items before selling, mark as sold with automatic sale creation, partial quantity support)</li>
+        <li>Multi-business management (create and switch between multiple business profiles, set default business)</li>
         <li>Profit calculation and analytics with interactive charts</li>
         <li>Advanced analytics (revenue breakdowns, expense breakdowns, profit trends)</li>
         <li>P&L Calendar (visual monthly calendar showing daily sales, expenses, and profits)</li>
-        <li>Category customization for sales, expenses, and inventory</li>
+        <li>Category customization for sales and expenses</li>
+        <li>Saved filter presets with multi-category selection, search functionality, and edit capability</li>
         <li>Data visualization and reporting</li>
         <li>CSV export functionality (free tier)</li>
-        <li>Excel export with advanced formatting and charts (Premium only)</li>
-        <li>Product image, inventory image, and receipt photo uploads</li>
+        <li>Excel export with advanced formatting, filters, charts, and profit analysis (Premium only)</li>
+        <li>Product image and receipt photo uploads with secure cloud storage</li>
         <li>Biometric authentication (Face ID, Touch ID, Fingerprint) - optional</li>
-        <li>Dark mode and light mode themes</li>
+        <li>Dark mode and light mode themes with liquid glass design</li>
         <li>Currency support with customizable settings</li>
-        <li>Free tier: Limited to 15 sales, 15 expenses, and 15 inventory items</li>
-        <li>Premium subscription: Unlimited transactions, inventory items, and advanced features</li>
+        <li>Milestone celebrations for profit achievements</li>
+        <li>Free tier: Limited to 15 sales and 15 expenses (inventory unlimited on free tier)</li>
+        <li>Premium subscription: Unlimited transactions, inventory uploads, and advanced features</li>
       </ul>
 
       <h2 id="3-user-accounts">3. User Accounts</h2>
@@ -104,21 +105,25 @@
       <ul>
         <li>Limited to 15 sales transactions</li>
         <li>Limited to 15 expense entries</li>
-        <li>Limited to 15 inventory items</li>
+        <li>Unlimited inventory items (can track items before selling)</li>
         <li>Basic analytics and reporting</li>
         <li>CSV export functionality</li>
-        <li>Access to core features (multi-business, category customization, P&L calendar, inventory management)</li>
+        <li>Access to core features (multi-business, category customization, P&L calendar, saved filters)</li>
       </ul>
       <h3 id="42-premium-subscription">4.2 Premium Subscription</h3>
       <ul>
-        <li>Priced at $9.99 USD per month (prices may vary by region and currency)</li>
+        <li>Priced at $9.99 USD per month or $99.99 USD per year (save 17%)</li>
+        <li>Prices may vary by region and currency</li>
         <li>Unlimited sales and expense entries</li>
-        <li>Unlimited inventory items</li>
+        <li>Unlimited inventory item uploads with photos</li>
         <li>Advanced analytics and features</li>
-        <li>Excel export with advanced formatting and monthly charts</li>
-        <li>Billed monthly through Apple App Store or Google Play Store</li>
+        <li>Excel export with advanced formatting, filters, monthly charts, and profit analysis</li>
+        <li>Product image and receipt photo uploads with cloud storage</li>
+        <li>Priority support</li>
+        <li>Billed through Apple App Store or Google Play Store</li>
         <li>Automatically renews unless cancelled 24 hours before the end of the billing period</li>
         <li>Managed through RevenueCat subscription platform</li>
+        <li>Free trial available (length varies by promotion)</li>
       </ul>
       <h3 id="43-subscription-management">4.3 Subscription Management</h3>
       <ul>
@@ -126,6 +131,7 @@
         <li>Cancel subscription through Apple App Store or Google Play Store (not within the App)</li>
         <li>Cancellation takes effect at the end of the current billing period</li>
         <li>No partial refunds for unused time within a billing period</li>
+        <li>Premium features remain accessible until subscription expires</li>
       </ul>
       <h3 id="44-refunds">4.4 Refunds</h3>
       <ul>
@@ -150,7 +156,7 @@
       </ul>
       <h3 id="52-uploaded-content">5.2 Uploaded Content</h3>
       <ul>
-        <li>When you upload product images, inventory images, or receipt photos, you represent that:
+        <li>When you upload product images, inventory photos, or receipt photos, you represent that:
           <ul>
             <li>You own the images or have the right to upload them</li>
             <li>The images do not violate any copyright, trademark, or other intellectual property rights</li>
@@ -159,16 +165,28 @@
         </li>
         <li>We reserve the right to remove any uploaded content that violates these terms</li>
         <li>Uploaded images are stored securely and are only accessible by you</li>
-        <li>Images are accessed via temporary signed URLs (7-day expiry)</li>
+        <li>Images are accessed via temporary signed URLs (7-day expiry, automatically refreshed)</li>
+        <li>Premium subscribers can upload unlimited images; free tier users cannot upload images</li>
       </ul>
-      <h3 id="53-data-storage">5.3 Data Storage</h3>
+
+      <h3 id="53-saved-filters">5.3 Saved Filters</h3>
+      <ul>
+        <li>You can create saved filter presets with custom names, category selections, and search terms</li>
+        <li>Saved filters are stored locally on your device (AsyncStorage) for offline access</li>
+        <li>You can edit or delete saved filter presets at any time</li>
+        <li>If you delete a saved filter that is currently active, the active filter will be automatically cleared</li>
+        <li>Saved filters are specific to each page (sales, expenses, inventory)</li>
+      </ul>
+
+      <h3 id="54-data-storage">5.4 Data Storage</h3>
       <ul>
         <li>All data is stored securely using Supabase cloud infrastructure (United States)</li>
         <li>Data is encrypted in transit using industry-standard SSL/TLS</li>
         <li>Database access is protected by Row Level Security (RLS) policies</li>
         <li>We implement reasonable security measures to protect your data</li>
+        <li>Some data is cached locally on your device for offline access and performance (sales, expenses, inventory, saved filters, milestone achievements)</li>
       </ul>
-      <h3 id="54-data-backup">5.4 Data Backup</h3>
+      <h3 id="55-data-backup">5.5 Data Backup</h3>
       <ul>
         <li>You are responsible for maintaining backups of your data</li>
         <li>We recommend regularly exporting your data using the CSV or Excel export features</li>
@@ -215,16 +233,30 @@
         <li>Attempt to scrape or extract data using automated means</li>
         <li>Impersonate another person or entity</li>
         <li>Violate any applicable export laws or regulations</li>
+        <li>Abuse the saved filter feature to store excessive amounts of data</li>
+        <li>Manipulate milestone achievements or other gamification features</li>
       </ul>
 
       <h2 id="8-third-party-integrations">8. Third-Party Integrations and Permissions</h2>
       <h3 id="81-camera-photo-library">8.1 Camera and Photo Library Access</h3>
       <ul>
-        <li>The App requests access to your device's camera and photo library to upload product images, inventory images, and receipt photos</li>
+        <li>The App requests access to your device's camera and photo library to upload product images, inventory photos, and receipt photos</li>
         <li>This permission is optional - you can use the App without granting camera/photo access</li>
+        <li>Camera/photo access is required for Premium subscribers to upload images</li>
         <li>You can revoke these permissions at any time in your device settings</li>
         <li>We only access the specific photos you choose to upload</li>
         <li>Permissions are requested with clear explanations (NSPhotoLibraryUsageDescription, NSCameraUsageDescription)</li>
+      </ul>
+      <h3 id="82-biometric-authentication">8.2 Biometric Authentication (Optional)</h3>
+      <ul>
+        <li>The App offers optional biometric authentication (Face ID, Touch ID, Fingerprint)</li>
+        <li>This feature is entirely optional and can be enabled or disabled at any time in Settings</li>
+        <li>Your biometric data (fingerprint, face scan) NEVER leaves your device and is NOT transmitted to our servers</li>
+        <li>We only store your user ID and email (encrypted) on your device using Expo SecureStore</li>
+        <li>The biometric authentication uses your device's native biometric system</li>
+        <li>Disabling biometric authentication removes stored credentials from your device</li>
+        <li>You are responsible for securing your device's biometric features</li>
+      </ul>
       </ul>
       <h3 id="82-biometric-authentication">8.2 Biometric Authentication (Optional)</h3>
       <ul>
@@ -265,7 +297,7 @@
       <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
       <ul>
         <li>Warranties of merchantability or fitness for a particular purpose</li>
-        <li>Accuracy, reliability, or completeness of content (including tax calculations, profit calculations, inventory tracking, analytics)</li>
+        <li>Accuracy, reliability, or completeness of content (including tax calculations, profit calculations, inventory tracking, cost basis calculations, analytics)</li>
         <li>Uninterrupted or error-free operation</li>
         <li>Security or freedom from viruses or harmful components</li>
         <li>Accuracy of data synchronization across devices</li>
@@ -273,7 +305,9 @@
         <li>Availability of third-party services (Supabase, RevenueCat, Apple, Google)</li>
         <li>Quality or functionality of biometric authentication on all devices</li>
         <li>Accuracy of imported data from third-party integrations</li>
-        <li>Accuracy of inventory quantities, costs, or profit calculations</li>
+        <li>Proper functioning of saved filter presets across app updates</li>
+        <li>Accuracy of inventory stock levels and sold quantities</li>
+        <li>Timing or display of milestone celebrations</li>
       </ul>
 
       <h2 id="11-limitation-of-liability">11. Limitation of Liability</h2>
@@ -288,7 +322,9 @@
         <li>We are not liable for unauthorized access resulting from your failure to secure your account</li>
         <li>We are not responsible for device-specific issues (biometric hardware, camera/photo access)</li>
         <li>We are not liable for any damage resulting from use of imported data from third-party integrations</li>
-        <li>We are not liable for inventory tracking inaccuracies or discrepancies</li>
+        <li>We are not responsible for inventory tracking errors or stock discrepancies</li>
+        <li>We are not liable for inaccurate profit calculations resulting from incorrect cost basis or data entry</li>
+        <li>We are not responsible for loss of saved filter presets due to device changes or data loss</li>
       </ul>
 
       <h2 id="12-tax-disclaimer">12. Tax Disclaimer</h2>
@@ -305,31 +341,58 @@
             <li>Special tax districts</li>
             <li>Tax exemptions or special circumstances</li>
             <li>Changes in tax laws or rates</li>
+            <li>Inventory cost basis adjustments</li>
+            <li>Depreciation or amortization</li>
           </ul>
         </li>
         <li>You should verify all tax calculations with a tax professional before filing</li>
       </ul>
 
-      <h2 id="13-account-termination">13. Account Termination</h2>
-      <h3 id="131-by-you">13.1 By You</h3>
+      <h2 id="13-inventory-management-disclaimer">13. Inventory Management Disclaimer</h2>
+      <ul>
+        <li>The inventory management feature is provided as a convenience tool to help track items before you sell them</li>
+        <li>You are responsible for the accuracy of:
+          <ul>
+            <li>Purchase prices and cost basis</li>
+            <li>Quantity counts and stock levels</li>
+            <li>Photos and descriptions</li>
+            <li>Marking items as sold with correct quantities</li>
+          </ul>
+        </li>
+        <li>The App automatically creates sales when you mark inventory as sold, using the data you entered</li>
+        <li>You should verify that automatically generated sales are accurate before relying on them for accounting or tax purposes</li>
+        <li>We are not responsible for:
+          <ul>
+            <li>Inventory valuation errors</li>
+            <li>Stock discrepancies</li>
+            <li>Loss or theft of physical inventory</li>
+            <li>Errors in cost of goods sold (COGS) calculations</li>
+            <li>Inaccurate profit margins due to incorrect inventory data</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 id="14-account-termination">14. Account Termination</h2>
+      <h3 id="141-by-you">14.1 By You</h3>
       <ul>
         <li>You may delete your account at any time through the App settings (Settings &gt; Danger Zone &gt; Delete Account)</li>
         <li>Account deletion is permanent and cannot be undone</li>
         <li>You will be required to type "DELETE" to confirm account deletion</li>
         <li>All your data will be permanently deleted within 30 days, including:
           <ul>
-            <li>All sales and expense transactions</li>
-            <li>All inventory items</li>
-            <li>Business profiles</li>
-            <li>Uploaded product images, inventory images, and receipt photos</li>
+            <li>All sales, expense, and inventory transactions</li>
+            <li>Business profiles and default business settings</li>
+            <li>Saved filter presets</li>
+            <li>Uploaded product images and receipt photos</li>
             <li>Account credentials and profile information (email, password, first name, last name, phone number)</li>
             <li>Biometric credentials stored on your device (if enabled)</li>
+            <li>Cached data on your device (sales, expenses, inventory, filters, milestones)</li>
           </ul>
         </li>
         <li>The deletion process uses a secure Supabase Edge Function that ensures complete data removal with cascading deletes across all related tables and storage buckets</li>
         <li>Backup copies are purged within 90 days</li>
       </ul>
-      <h3 id="132-by-us">13.2 By Us</h3>
+      <h3 id="142-by-us">14.2 By Us</h3>
       <p>We may suspend or terminate your account if:</p>
       <ul>
         <li>You violate these Terms and Conditions</li>
@@ -338,8 +401,9 @@
         <li>Your account has been inactive for an extended period (typically more than 2 years)</li>
         <li>Required by law or legal process</li>
         <li>You repeatedly violate our policies after warnings</li>
+        <li>You abuse the saved filter feature or other App features</li>
       </ul>
-      <h3 id="133-effect-of-termination">13.3 Effect of Termination</h3>
+      <h3 id="143-effect-of-termination">14.3 Effect of Termination</h3>
       <ul>
         <li>Upon termination, your right to use the App immediately ceases</li>
         <li>We are not liable for any loss of data or content resulting from termination</li>
@@ -347,14 +411,14 @@
         <li>You may lose access to any data that has not been exported</li>
       </ul>
 
-      <h2 id="14-modifications-to-the-app">14. Modifications to the App</h2>
+      <h2 id="15-modifications-to-the-app">15. Modifications to the App</h2>
       <ul>
         <li>We reserve the right to modify or discontinue the App at any time</li>
         <li>We may update features, functionality, or design without notice</li>
         <li>We are not liable for any modifications or discontinuation</li>
       </ul>
 
-      <h2 id="15-modifications-to-terms">15. Modifications to Terms</h2>
+      <h2 id="16-modifications-to-terms">16. Modifications to Terms</h2>
       <ul>
         <li>We may update these Terms and Conditions at any time</li>
         <li>Changes will be posted in the App with an updated "Last Updated" date</li>
@@ -362,14 +426,14 @@
         <li>Material changes will be communicated via email or in-app notification</li>
       </ul>
 
-      <h2 id="16-governing-law">16. Governing Law</h2>
+      <h2 id="17-governing-law">17. Governing Law</h2>
       <ul>
         <li>These Terms are governed by the laws of the United States</li>
         <li>Any disputes shall be resolved in the appropriate courts</li>
         <li>If any provision is found unenforceable, the remaining provisions remain in effect</li>
       </ul>
 
-      <h2 id="17-contact-information">17. Contact Information</h2>
+      <h2 id="18-contact-information">18. Contact Information</h2>
       <p>For questions about these Terms and Conditions, please contact us at:</p>
       <ul>
         <li>Email: <a href="mailto:profittrackerbusiness@gmail.com">profittrackerbusiness@gmail.com</a></li>
@@ -378,15 +442,52 @@
       </ul>
       <p>We will respond to inquiries within 30 days.</p>
 
-      <h2 id="18-severability">18. Severability</h2>
+      <h2 id="19-severability">19. Severability</h2>
       <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
 
-      <h2 id="19-entire-agreement">19. Entire Agreement</h2>
+      <h2 id="20-entire-agreement">20. Entire Agreement</h2>
       <p>These Terms and Conditions, together with our Privacy Policy, constitute the entire agreement between you and ProfitTracker regarding the use of the App.</p>
+
+      <h2 id="21-feature-specific-terms">21. Feature-Specific Terms</h2>
+      <h3 id="211-inventory-management">21.1 Inventory Management</h3>
+      <ul>
+        <li>Inventory items can be created with purchase prices, quantities, and photos</li>
+        <li>Marking inventory as sold automatically creates a sale transaction with the profit calculated from your cost basis</li>
+        <li>Partial quantity selling is supported (e.g., sell 5 of 10 items)</li>
+        <li>You can view remaining stock and total invested value in the inventory page</li>
+        <li>Premium subscribers can upload photos to inventory items; free tier users can create inventory without photos</li>
+      </ul>
+
+      <h3 id="212-saved-filters">21.2 Saved Filters</h3>
+      <ul>
+        <li>You can create named filter presets with multi-category selection, search terms, and date ranges</li>
+        <li>Saved filters are stored locally on your device using AsyncStorage</li>
+        <li>Each page (sales, expenses, inventory) has its own set of saved filters</li>
+        <li>You can edit, apply, or delete saved filters at any time</li>
+        <li>If you delete an active filter, it will be automatically cleared from the current view</li>
+        <li>Saved filters are not synced across devices (stored locally only)</li>
+      </ul>
+
+      <h3 id="213-default-business">21.3 Default Business</h3>
+      <ul>
+        <li>You can set a default business in Settings that will open automatically when you launch the App</li>
+        <li>This streamlines your workflow if you primarily work with one business</li>
+        <li>You can change or remove the default business at any time</li>
+        <li>The default business setting is stored locally on your device</li>
+      </ul>
+
+      <h3 id="214-milestone-celebrations">21.4 Milestone Celebrations</h3>
+      <ul>
+        <li>The App celebrates profit milestones at key thresholds ($100, $500, $1,000, $5,000, $10,000, etc.)</li>
+        <li>Milestone achievements are stored locally to prevent duplicate celebrations</li>
+        <li>Milestones are based on your total net profit across all businesses</li>
+        <li>You can dismiss milestone modals at any time</li>
+        <li>We are not responsible for timing or display accuracy of milestone celebrations</li>
+      </ul>
 
       <hr />
       <p>By using ProfitTracker, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
-      <p><em>Last Updated: December 14, 2025</em></p>
+      <p><strong>Last Updated: December 24, 2025</strong></p>
     </article>
   </main>
 </body>
